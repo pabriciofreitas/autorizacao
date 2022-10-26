@@ -6,6 +6,8 @@ flutter create nome_do_projeto
 
 flutter IDE online: https://flutlab.io/editor/014662a5-4b2f-425f-b55b-87ba21c114cb
 
+Para abrir vccode online: https://github1s.com/pabriciofreitas/autorizacao/blob/HEAD/lib/main.dart
+
 Extensões que ajudar: Awesome Flutter Snippets, 
 
 confinguração do vsCOde para flutter:
