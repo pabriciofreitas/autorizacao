@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../theme.dart';
 import '../utils/bubble_indicator_painter.dart';
+import 'widgets/sign_in.dart';
+import 'widgets/sign_up.dart';
 
 class AuthPage extends StatefulWidget {
   const AuthPage({Key? key}) : super(key: key);
@@ -89,11 +91,13 @@ class _AuthPageState extends State<AuthPage>
                     //remover o foco dos textformfields quando troca de tela
                     FocusScope.of(context).requestFocus(FocusNode());
                     if (index == 0) {
+                      //mudar a cor dos textos dos botões
                       setState(() {
                         right = Colors.white;
                         left = Colors.black;
                       });
                     } else if (index == 1) {
+                      //mudar a cor dos textos dos botões
                       setState(() {
                         right = Colors.black;
                         left = Colors.white;
@@ -101,19 +105,17 @@ class _AuthPageState extends State<AuthPage>
                     }
                   },
                   children: <Widget>[
-                    Container(),
-                    Container()
-                    // //tela de login
-                    // ConstrainedBox(
-                    //   constraints: const BoxConstraints.expand(),
-                    //   child: SignIn(),
-                    // ),
-                    // //tela de cadastro
+                    //tela de login
+                    ConstrainedBox(
+                      constraints: const BoxConstraints.expand(),
+                      child: SignIn(),
+                    ),
+                    //tela de cadastro
 
-                    // ConstrainedBox(
-                    //   constraints: const BoxConstraints.expand(),
-                    //   child: SignUp(),
-                    // ),
+                    ConstrainedBox(
+                      constraints: const BoxConstraints.expand(),
+                      child: SignUp(),
+                    ),
                   ],
                 ),
               ),
