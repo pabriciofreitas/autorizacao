@@ -2,7 +2,7 @@
 
 Como criar projeto flutter? Rode no terminal:
 
-flutter create nome_do_projeto
+flutter create tela_login
 
 flutter IDE online: https://flutlab.io/editor/014662a5-4b2f-425f-b55b-87ba21c114cb
 
